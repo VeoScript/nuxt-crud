@@ -6,13 +6,13 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
 model Books {
   id              String             @id              @default(cuid())
   title           String
-  description     String             @db.LongText
+  description     String
   author          String
 }
