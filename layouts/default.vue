@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-grow w-full h-full">
+  <div class="flex flex-grow flex-col items-center w-full h-full">
     <slot/>
   </div>
 </template>
